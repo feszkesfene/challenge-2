@@ -10,6 +10,14 @@ $color-grey-light: hsl(0, 0%, 98%);
 //FONT VARIABLES
 $font-default: 'Poppins', sans-serif;
 
+//MIXINS
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 //RESPONSIVE BREAKPOINTS
 $bp-huge: 90em;    //1440px
 $bp-small:  23.4em;   //375px

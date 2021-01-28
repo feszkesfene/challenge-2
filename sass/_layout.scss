@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    @include flex;
+
+    &__card {
+        display: grid;
+
+        &__main {
+
+        }
+
+        &__icon {
+            
+        }
+    }
+}
+
+//FOOTER
+.attribution {
+    margin: 0 auto;
+    padding-top: 3rem;
+    text-align: center;
+}

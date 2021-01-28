@@ -20,4 +20,32 @@ body {
   color: #a3a5ae;
   background-color: #fafafa;
 }
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__card {
+  display: -ms-grid;
+  display: grid;
+}
+
+.attribution {
+  margin: 0 auto;
+  padding-top: 3rem;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
