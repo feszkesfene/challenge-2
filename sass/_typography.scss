@@ -14,9 +14,13 @@
 }
 
 .text__paragraph {
+    display: block;
+    width: 70%;
+    margin: 0 auto 3rem;
     font-size: 1.4rem;
     text-align: center;
     padding: 2rem;
+    //margin-bottom: 5rem;
 }
 
 .heading-3 {

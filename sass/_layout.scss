@@ -1,48 +1,72 @@
 .container {
     width: 100%;
     @include flex;
-    margin-top: 5rem;
-    
-
+    margin-top: 7rem;
     
 }
 
 .card {
     display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, 30rem));
-    grid-template-rows: repeat(4, minmax(min-content, 12rem));
-    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 30rem);
+    grid-template-rows: repeat(4, 11rem);
+    grid-gap: 2.5rem;
 
     &__main {
         position: relative;
         border-radius: .5rem;
         box-shadow: 0 1.2rem 1.7rem rgba($color-blue-dark, .12);
         padding: 3rem;
-        margin-top: 2.5rem;
+        //margin-top: 2.5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 35rem;
+            height: 24rem;
+        }
     }
 
     &--1 {
         grid-row: 2 / 4;
         grid-column: 1 / 2;
         border-top: solid .4rem $cyan;
+
+        @media only screen and (max-width: $bp-big) {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+
     }
 
     &--2 {
         grid-row: 1 / 3;
         grid-column: 2 / 3;
         border-top: solid .4rem $red;
+
+        @media only screen and (max-width: $bp-big) {
+            grid-row: 1 / 2;
+            grid-column: 2 / -1;
+        }
     }
 
     &--3 {
         grid-row: 3 / 5;
         grid-column: 2 / 3;
         border-top: solid .4rem $orange;
+
+        @media only screen and (max-width: $bp-big) {
+            grid-row: 2 / -1;
+            grid-column: 1 / 2;
+        }
     }
 
     &--4 {
         grid-row: 2 / 4;
         grid-column: 3 / 4;
         border-top: solid .4rem $blue;
+
+        @media only screen and (max-width: $bp-big) {
+            grid-row: 2 / -1;
+            grid-column: 2  / -1;
+        }
     }
 
     &__icon {
@@ -50,6 +74,16 @@
            right: 2.5rem;
            bottom: 2.5rem;
 
+    }
+
+    @media only screen and (max-width: $bp-big) {
+        grid-template-columns: repeat(2, 30rem);
+        grid-template-rows: repeat(2, 23rem);
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        flex-direction: column;
     }
 }
 
